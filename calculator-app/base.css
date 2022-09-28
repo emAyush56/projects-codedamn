@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #00aafe, #00fe6d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    background-color: #ffffff;
+    min-height: 400px;
+    /* width: 276px; */
+    width: 256px;
+    /* border-radius: 4px; */
+    /* padding: 4px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.output {
+    background-color: #003331;
+    color: #fff;
+    /* border-radius: 4px; */
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 15px;
+}
+
+.previous-operand {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.keys-row {
+    display: flex;
+    /* gap: 4px; */
+}
+
+.key {
+    background-color: #bff4ed;
+    border: 1px solid white;
+    height: 64px;
+    width: 64px;
+    font-size: 18px;
+    font-weight: 600;
+    /* to center the key texts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key:hover {
+    background-color: #99dfd6;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.key-wide {
+    flex-grow: 1;
+}
